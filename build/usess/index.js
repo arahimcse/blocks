@@ -62,14 +62,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 function Edit() {
-  const greenBackground = {
-    backgroundColor: '#090',
-    color: '#fff',
-    padding: '20px'
-  };
-  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-    style: greenBackground
-  });
+  // const greenBackground = {
+  //         backgroundColor: '#090',
+  //         color: '#fff',
+  //         padding: '20px',
+  //     };
+
+  //     const blockProps = useBlockProps( { style: greenBackground } );
+
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
     ...blockProps,
     children: "Hello World (from the editor, in green)."
@@ -177,15 +178,16 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 function save() {
-  const redBackground = {
-    backgroundColor: '#900',
-    color: '#fff',
-    padding: '20px',
-    fontStyle: "italic"
-  };
-  const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save({
-    style: redBackground
-  });
+  // const redBackground = {
+  //         backgroundColor: '#900',
+  //         color: '#fff',
+  //         padding: '20px',
+  // 		fontStyle :"italic"
+  //     };
+
+  //     const blockProps = useBlockProps.( { style: redBackground } );
+
+  const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save();
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
     ...blockProps,
     children: "Hello World (from the frontend, in red)."

@@ -16,14 +16,16 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {Element} Element to render.
  */
 export default function save() {
-	const redBackground = {
-            backgroundColor: '#900',
-            color: '#fff',
-            padding: '20px',
-			fontStyle :"italic"
-        };
+	// const redBackground = {
+    //         backgroundColor: '#900',
+    //         color: '#fff',
+    //         padding: '20px',
+	// 		fontStyle :"italic"
+    //     };
 
-        const blockProps = useBlockProps.save( { style: redBackground } );
+    //     const blockProps = useBlockProps.( { style: redBackground } );
+
+	const blockProps = useBlockProps.save();
 
         return (
             <p { ...blockProps }>Hello World (from the frontend, in red).</p>

@@ -30,13 +30,15 @@ import './editor.scss';
  * @return {Element} Element to render.
  */
 export default function Edit() {
-	const greenBackground = {
-            backgroundColor: '#090',
-            color: '#fff',
-            padding: '20px',
-        };
+	// const greenBackground = {
+    //         backgroundColor: '#090',
+    //         color: '#fff',
+    //         padding: '20px',
+    //     };
 
-        const blockProps = useBlockProps( { style: greenBackground } );
+    //     const blockProps = useBlockProps( { style: greenBackground } );
+
+	const blockProps = useBlockProps();
 
         return (
             <p { ...blockProps }>Hello World (from the editor, in green).</p>

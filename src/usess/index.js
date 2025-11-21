@@ -37,3 +37,7 @@ registerBlockType( metadata.name, {
 	 */
 	save,
 } );
+/**
+ * Block edit and save
+ * link@ https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#block-wrapper-props
+ */
